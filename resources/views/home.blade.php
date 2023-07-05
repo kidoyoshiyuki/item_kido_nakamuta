@@ -16,9 +16,5 @@
 
 @section('js')
     <script> console.log('Hi!'); </script>
-    <?php
-    Illuminate\Support\Facades\Log::info( "--------------home blade------------" . url()->current() );
-
-    ?>
 @stop
 

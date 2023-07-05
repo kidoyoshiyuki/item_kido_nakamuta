@@ -23,12 +23,9 @@ class RedirectIfAuthenticated
 
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
-                Log::info( "*******************************" . url()->current());
                 return redirect(RouteServiceProvider::HOME);
             }
         }
-        Log::info( "************nnnnnnnnnnn*******************" . url()->current());
-
         return $next($request);
     }
 }
