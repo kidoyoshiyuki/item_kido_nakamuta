@@ -37,4 +37,9 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    public function redirectPath()
+    {
+        return 'https://item-kido-nakamuta-7214da4d2f18.herokuapp.com/';
+    }
 }
