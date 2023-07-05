@@ -4,6 +4,9 @@
 
 @section('content_header')
     <h1>ホーム画面</h1>
+    <?php
+    Illuminate\Support\Facades\Log::info( "--------------home blade------------" . url()->current() );
+    ?>
 @stop
 
 @section('content')

@@ -22,7 +22,7 @@ Auth::routes();
 //ホーム画面のルーティング
 //一般ユーザー以上がアクセス可能な領域
 Route::group(['middleware' => ['auth', 'can:user-higher']], function () {
-    Route::get('/', [App\Http\Controllers\HomeController::class, 'index2'])->name('home');
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 });
 
 
