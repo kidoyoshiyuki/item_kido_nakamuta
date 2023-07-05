@@ -18,7 +18,7 @@
     <script> console.log('Hi!'); </script>
     <?php
     Illuminate\Support\Facades\Log::info( "--------------home blade------------" . url()->current() );
-    dd($request);
+
     ?>
 @stop
 

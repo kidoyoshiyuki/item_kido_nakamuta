@@ -27,7 +27,7 @@ class LoginController extends Controller
      * @var string
      */
     //protected $redirectTo = RouteServiceProvider::HOME;
-    protected $redirectTo = "/";
+    protected $redirectTo = "https://item-kido-nakamuta-7214da4d2f18.herokuapp.com/";
 
     /**
      * Create a new controller instance.
