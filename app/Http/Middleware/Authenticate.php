@@ -14,6 +14,7 @@ class Authenticate extends Middleware
      */
     protected function redirectTo($request)
     {
+        Log::info( "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" . route('login') );
         if (! $request->expectsJson()) {
             Log::info( "=========================================" . route('login') );
             return route('login');
