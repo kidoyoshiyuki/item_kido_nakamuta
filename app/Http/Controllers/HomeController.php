@@ -21,14 +21,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
         Log::info( "----------------------------------" . url()->current() );
-        return view('home');
-    }
-    public function index2()
-    {
-        Log::info( "-------------xxxxxxxxxxxxxxxxxxxx--------" . url()->current() );
+        dd($request);
         return view('home');
     }
 }
