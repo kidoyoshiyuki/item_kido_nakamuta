@@ -27,7 +27,7 @@ class RedirectIfAuthenticated
                 return redirect(RouteServiceProvider::HOME);
             }
         }
-        Log::info( "*******************************" . url('/'));
+        Log::info( "************nnnnnnnnnnn*******************" . url('/'));
 
         return $next($request);
     }
