@@ -24,7 +24,7 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         Log::info( "----------------------------------" . url()->current() );
-        dd($request);
+        //dd($request);
         return view('home');
     }
 }
