@@ -23,7 +23,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        Log::info( "----------------------------------" . url('/') );
+        Log::info( "----------------------------------" . url()->current() );
+        return view('home');
+    }
+    public function index2()
+    {
+        Log::info( "-------------xxxxxxxxxxxxxxxxxxxx--------" . url()->current() );
         return view('home');
     }
 }
