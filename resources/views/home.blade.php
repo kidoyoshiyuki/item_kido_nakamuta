@@ -4,9 +4,6 @@
 
 @section('content_header')
     <h1>ホーム画面</h1>
-    <?php
-    Illuminate\Support\Facades\Log::info( "--------------home blade------------" . url()->current() );
-    ?>
 @stop
 
 @section('content')
@@ -19,5 +16,8 @@
 
 @section('js')
     <script> console.log('Hi!'); </script>
+    <?php
+    Illuminate\Support\Facades\Log::info( "--------------home blade------------" . url()->current() );
+    ?>
 @stop
 
